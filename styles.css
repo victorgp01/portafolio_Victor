@@ -464,7 +464,7 @@ footer p {
     text-decoration: none;
     padding: 1rem;
     border-radius: 50%;
-    transition: all 2s;
+    transition: all 0.5s;
   }
   .nav_Menu a {
     transition: all 0.5s;
