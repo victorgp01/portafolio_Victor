@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+:root {
+  --purple: #be7bef;
+  --black: #222222;
+  --orange: #fcda68;
+  --darkBlack: #423f40;
+  --white: #ffffff;
+  --cream: #dedddc;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.imgMobile {
+  display: block;
+}
+
+.imgDesktop {
+  display: none;
+}
+
+section {
+  padding: 2rem 1rem;
+  gap: 3rem;
+}
+
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 20px;
+}
+.home {
+  padding: 4rem;
+}
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.homeText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.years {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.years p {
+  color: var(--cream);
+}
+.home span {
+  color: var(--purple);
+  font-size: 20px;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 1rem;
+}
+.socialIcons :nth-child(1) {
+  background-color: var(--purple);
+  color: var(--white);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.Contact {
+  background-color: var(--purple);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 3rem;
+}
+
+.ContactPagra {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.ExpAndSkill {
+  background-color: var(--orange);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ExpYp {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ExpYp p {
+  color: var(--darkBlack);
+}
+
+.cont1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.Exp {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.AgeExp {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Exp1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.Exp2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.Exp3 {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.line {
+  height: 1px;
+  background-color: var(--darkBlack);
+}
+
+.Exp p {
+  display: block;
+  color: var(--darkBlack);
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.Exp Span {
+  color: var(--darkBlack);
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skillIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.Porfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.porfCont {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.porfCont h3 {
+  color: var(--purple);
+}
+
+.textImg {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.phoneEmailcont {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem;
+  gap: 1.5rem;
+}
+
+.iconPE {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+.phone p {
+  color: var(--darkBlack);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple);
+}
+footer p {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.nav_Menu {
+  display: none;
+}
+.icon_menu {
+  display: flex;
+  justify-content: end;
+  padding: 2rem;
+}
+
+@media (max-width: 950px) {
+  .nav_Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    top: 50px;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--white);
+    transform: translateX(-100%);
+
+    transition: transform 0.5s;
+  }
+  .icon_menu {
+    color: var(--orange);
+  }
+  .menu_show {
+    transform: translateX(0);
+  }
+
+  .nav_Menu:hover {
+    background-color: var(--darkBlack);
+    color: var(--cream);
+    padding: 1rem;
+    transition: all 0.5s;
+  }
+  .nav_Menu li:hover {
+    color: var(--purple);
+  }
+  .nav_Menu li a:active {
+    background-color: var(--cream);
+    transition: all 0.2s;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 2s;
+  }
+  .nav_Menu a {
+    transition: all 0.5s;
+  }
+}
+@media (min-width: 950px) {
+  section {
+    gap: 3rem;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .home {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .imgMobile {
+    display: none;
+  }
+
+  .imgDesktop {
+    display: block;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .containerHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 320px;
+    height: 50px;
+  }
+
+  .homeText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .icon img {
+    width: 60px;
+  }
+  .socialIcons :nth-child(1) {
+    background-color: var(--purple);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .cont1 {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .Exp {
+    width: 70%;
+  }
+  .ExpAndSkill {
+    padding: 3rem;
+  }
+  .Porfolio {
+    padding: 3rem;
+  }
+  .contacto {
+    padding: 3rem;
+  }
+  .skill {
+    gap: 1rem;
+  }
+  .skillcont {
+    display: flex;
+    justify-content: center;
+    margin: auto 10rem;
+    gap: 6rem;
+  }
+  .porfCont {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+  }
+  .contacto {
+    text-align: initial;
+    padding-bottom: 5rem;
+  }
+  .phoneEmailcont {
+    justify-content: center;
+    gap: 10rem;
+  }
+  .icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 30%;
+    justify-content: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    margin: 0;
+    left: 0;
+    top: 0;
+    background-color: var(--white);
+  }
+  .navbar:hover {
+    background-color: var(--darkBlack);
+    color: var(--cream);
+    padding: 1rem;
+    transition: all 0.5s;
+  }
+  .nav_Menu li:hover {
+    color: var(--purple);
+  }
+  .nav_Menu {
+    display: flex;
+    gap: 3.5rem;
+    padding: 0 3.5rem;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .nav_Menu li a:active {
+    background-color: var(--cream);
+    transition: all 0.2s;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 2s;
+  }
+  .nav_Menu a {
+    transition: all 0.5s;
+  }
+  .icon_menu {
+    display: none;
+  }
+}
+
+footer {
+  padding-bottom: 2rem;
+}
